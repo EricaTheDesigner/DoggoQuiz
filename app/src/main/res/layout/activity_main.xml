@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLACEHOLDER TITLE"
+                android:layout_marginTop="142dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer. Scroll down to test your knowledge today fren."
+                android:layout_marginTop="130dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+</ScrollView>
