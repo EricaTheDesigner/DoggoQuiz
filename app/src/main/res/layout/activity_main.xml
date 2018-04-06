@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,8 +9,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
 
             <TextView
                 android:id="@+id/title"
@@ -27,11 +26,69 @@
                 android:id="@+id/subhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer. Scroll down to test your knowledge today fren."
-                android:layout_marginTop="130dp"
+                android:text="Oh hi human! So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer. Scroll down to test your heckin good knowledge fren."
+                android:layout_marginTop="100dp"
                 android:gravity="center"
                 android:textSize="20sp"
                 />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:gravity="center"
+                android:layout_marginTop="100dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_one_doggo"
+                android:layout_marginTop="100dp"
+                />
+
+            <TextView
+                android:id="@+id/q_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our fren is enjoying:"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A heckin good mlem"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A heart warming story"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Neither of these"
+                        android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <View style="@style/Divider"/>
+
+            <CheckBox
+                android:id="@+id/q_one_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="24dp"
+                android:text="A heckin good mlem"
+                android:textSize="16sp" />
 
         </LinearLayout>
 </ScrollView>
