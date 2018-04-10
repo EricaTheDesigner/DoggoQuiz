@@ -5,341 +5,334 @@
     android:fillViewport="true"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
         <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingTop="16dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <TextView
-                    android:id="@+id/title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="PLACEHOLDER TITLE"
-                    android:layout_marginTop="142dp"
-                    android:textAlignment="center"
-                    android:textSize="30sp"
-                    />
-
-                <TextView
-                    android:id="@+id/subhead"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Oh hi human! So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer. Scroll down to test your heckin good knowledge fren."
-                    android:layout_marginTop="100dp"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/arrow"
-                    android:gravity="center"
-                    android:layout_marginTop="100dp"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/q_one_doggo"
-                    android:layout_marginTop="100dp"
-                    />
-            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp">
-
-                <TextView
-                    android:id="@+id/q_one"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Our fren is enjoying:"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textSize="24sp"
-                    android:fontFamily="sans-serif-bold"
-                    />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="vertical">
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="A heckin good mlem"
-                            android:onClick="onRadioButtonClicked"/>
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="A heart warming story"
-                            android:onClick="onRadioButtonClicked"/>
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Neither of these"
-                            android:onClick="onRadioButtonClicked"/>
-                </RadioGroup>
-
-                <View style="@style/Divider"/>
-
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="The Official"
+                android:textAlignment="center"
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/doggo2"
-                android:layout_marginTop="100dp"
-                />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
-        <TextView
-            android:id="@+id/q_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This doggo is a:"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="24sp"
-            android:fontFamily="sans-serif-bold"
-            />
-
-        <CheckBox
-            android:id="@+id/q_two_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Stylin and profilin longboi"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/q_two_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Doe eyed gooboi"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/q_two_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Pupper ready for supper"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-            <View style="@style/Divider"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/doggo3"
-        android:layout_marginTop="100dp"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
-        <TextView
-            android:id="@+id/q_three"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="STOP! This [woof/floof] needs to see some doggolingo ID."
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="24sp"
-            android:fontFamily="sans-serif-bold"
-            />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="Woof or floof?"
-            android:inputType="textCapWords"/>
-
-    </LinearLayout>
-
-    <View style="@style/Divider"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/doggo4"
-        android:layout_marginTop="100dp"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
-        <TextView
-            android:id="@+id/q_four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="UHOH..."
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="24sp"
-            android:fontFamily="sans-serif-bold"
-            />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:orientation="vertical">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trashboi is at it again!"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Someone did him a frighten."
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="This woofer ran out of borks to give."
-                android:onClick="onRadioButtonClicked"/>
-        </RadioGroup>
-
-    </LinearLayout>
-
-            <View style="@style/Divider"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/doggo5"
-                android:layout_marginTop="100dp"
-                />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
-        <TextView
-            android:id="@+id/q_five"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1 smol pupper + 1 woofer = ?"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="24sp"
-            android:fontFamily="sans-serif-bold"
-            />
-
-        <CheckBox
-            android:id="@+id/q_five_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="A woofer and a subwoofer"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/q_five_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="A heckin good team"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/q_five_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Borktastic cloidbois"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-            <View style="@style/Divider"/>
-
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/finaldoge"
-                    android:layout_weight="1"
-                    />
+                android:layout_height="159dp"
+                android:src="@drawable/doggonolingo_800" />
 
             <TextView
-                android:id="@+id/Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" ? "
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Quiz"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="Oh hi human! So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer? Scroll down to test your heckin good knowledge fren."
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:src="@drawable/arrow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/q_one_doggo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/q_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-bold"/>
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="Our fren is enjoying:"
+                android:textSize="24sp" />
 
-                <Button
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="send_score"
-                    android:text="submit test"
-                    android:layout_weight="1"
-                    android:layout_gravity="center_horizontal"
-                    />
+                    android:onClick="onRadioButtonClicked"
+                    android:text="A heckin good mlem" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="A heart warming story" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Neither of these" />
+            </RadioGroup>
+
+            <View style="@style/Divider" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doggo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <TextView
+                android:id="@+id/q_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Now lend a hand human. Your frens need you!"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:textSize="24sp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-bold"
-                />
+                android:text="This doggo is a:"
+                android:textSize="24sp" />
 
-            <Button
+            <CheckBox
+                android:id="@+id/q_two_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="open_adopt_search"
-                android:text="Adopt a fren"
-                android:layout_gravity="center_horizontal"
-                />
+                android:layout_marginBottom="16dp"
+                android:text="Stylin and profilin longboi"
+                android:textSize="16sp" />
 
-            <Button
+            <CheckBox
+                android:id="@+id/q_two_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="open_donation_page"
-                android:text="Donate"
-                android:layout_gravity="center_horizontal"
-                />
+                android:layout_marginBottom="16dp"
+                android:text="Doe eyed gooboi"
+                android:textSize="16sp" />
 
-            <Button
+            <CheckBox
+                android:id="@+id/q_two_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="open_volunteermap"
-                android:text="Volunteer"
-                android:layout_gravity="center_horizontal"
-                />
+                android:layout_marginBottom="16dp"
+                android:text="Pupper ready for supper"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doggo3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/q_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="STOP! This [woof/floof] needs to see some doggolingo ID."
+                android:textSize="24sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Woof or floof?"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doggo4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/q_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="UHOH..."
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Trashboi is at it again!" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Someone did him a frighten." />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="This woofer ran out of borks to give." />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doggo5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/q_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="1 smol pupper + 1 woofer = ?"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/q_five_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="A woofer and a subwoofer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q_five_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="A heckin good team"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q_five_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Borktastic cloidbois"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/finaldoge" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:gravity="center_horizontal"
+            android:text=" ? "
+            android:textSize="40sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="send_score"
+            android:text="submit test" />
+
 
     </LinearLayout>
 </ScrollView>
