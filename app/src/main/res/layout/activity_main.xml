@@ -89,25 +89,23 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/q_one_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="A heckin good mlem" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="A heart warming story" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="Neither of these" />
             </RadioGroup>
 
-            <View style="@style/Divider" />
+            <View style="@style/Divider"/>
 
         </LinearLayout>
 
@@ -127,7 +125,6 @@
             android:paddingRight="16dp">
 
             <TextView
-                android:id="@+id/q_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -310,28 +307,20 @@
 
         <ImageView
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_weight="1"
-            android:src="@drawable/finaldoge" />
-
-        <TextView
-            android:id="@+id/Score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="sans-serif-bold"
-            android:gravity="center_horizontal"
-            android:text=" ? "
-            android:textSize="40sp" />
+            android:src="@drawable/finaldoge"
+            android:layout_gravity="center_horizontal"/>
 
         <Button
+            android:id="@+id/send_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:onClick="send_score"
-            android:text="submit test" />
+            android:onClick="displayQuizScore"
+            android:text="submit test"
+            android:layout_marginBottom="8dp"
+            />
 
 
     </LinearLayout>
