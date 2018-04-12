@@ -50,9 +50,24 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //QUESTION THREE
-        EditText q_three_answer = findViewById(R.id.q_answer_three);
-        if (q_three_answer.toLowerCase() == "floof")
+        EditText q_three_answer_ed = findViewById(R.id.q_three_answer);
+        String q_three_answer = q_three_answer_ed.getText().toString();
+        if (q_three_answer == "floof")
             final_score = final_score + 20;
+
+        //QUESTION FOUR
+        RadioButton q_four_answer  = (RadioButton) findViewById(R.id.q_four_answer);
+        if (q_four_answer.isChecked()) {
+            final_score = final_score + 20;
+        }
+
+        //QUESTION FIVE
+        CheckBox q_five_one = (CheckBox) findViewById(R.id.q_five_one);
+        CheckBox q_five_two = (CheckBox) findViewById(R.id.q_five_two);
+        CheckBox q_five_three = (CheckBox) findViewById(R.id.q_five_three);
+        if (q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked()){
+            final_score = final_score + 20;
+        }
 
         return final_score;
     }
@@ -65,6 +80,5 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
-
 
 }

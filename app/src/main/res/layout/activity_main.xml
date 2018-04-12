@@ -177,7 +177,6 @@
             android:paddingRight="16dp">
 
             <TextView
-                android:id="@+id/q_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -187,6 +186,7 @@
                 android:textSize="24sp" />
 
             <EditText
+                android:id="@+id/q_three_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -213,7 +213,6 @@
             android:paddingRight="16dp">
 
             <TextView
-                android:id="@+id/q_four"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -229,21 +228,19 @@
                 android:orientation="vertical">
 
                 <RadioButton
+                    android:id="@+id/q_four_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="Trashboi is at it again!" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="Someone did him a frighten." />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onRadioButtonClicked"
                     android:text="This woofer ran out of borks to give." />
             </RadioGroup>
 
