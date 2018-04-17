@@ -17,7 +17,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
      //Tracks the score at the end of the app
-   int final_score = 0;
+   int final_score;
+   int question_one= 0;
+   int question_two= 0;
+   int question_three= 0;
+   int question_four= 0;
+   int question_five=0;
 
     //Intializing Views in on Create method, doesn't recognize int values
     TextView show_final_score;
@@ -29,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //QUESTION ONE
+    private void questionOneAns(View view){
+    RadioButton q_one_answer  = (RadioButton) findViewById(R.id.q_one_one);
+    if (q_one_answer.isChecked()) {
+        question_one = question_one + 20;
+    }
 
     /**
      * Calculates the Quiz Score
@@ -38,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         //QUESTION ONE
         RadioButton q_one_answer  = (RadioButton) findViewById(R.id.q_one_one);
         if (q_one_answer.isChecked()) {
-          final_score = final_score + 20;
+          question_one = question_one + 20;
         }
 
         //QUESTION TWO
@@ -72,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
         return final_score;
     }
 
+
+    //Calculates final_score
+    public int calculateFinalScore(){
+        final_score = 0;
+        final_score = final_score + question_one + question_two + question_three + question_four + question_five;
+        return final_score;
+    }
 
     public void displayQuizScore(View view) {
         Context context = getApplicationContext();
