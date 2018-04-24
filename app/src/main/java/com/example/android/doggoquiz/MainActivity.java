@@ -35,54 +35,49 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //QUESTION ONE
-    private void questionOneAns(View view){
-    RadioButton q_one_answer  = (RadioButton) findViewById(R.id.q_one_one);
-    if (q_one_answer.isChecked()) {
-        question_one = question_one + 20;
+    private void questionOneAns(View view) {
+        RadioButton q_one_answer = (RadioButton) findViewById(R.id.q_one_one);
+        if (q_one_answer.isChecked()) {
+            question_one = question_one + 20;
+        }
     }
 
-    /**
-     * Calculates the Quiz Score
-     */
-    public int tallyQuizScore(Integer view) {
-
-        //QUESTION ONE
-        RadioButton q_one_answer  = (RadioButton) findViewById(R.id.q_one_one);
-        if (q_one_answer.isChecked()) {
-          question_one = question_one + 20;
-        }
-
-        //QUESTION TWO
+    //QUESTION TWO
+    private void questionTwoAns(View view){
         CheckBox q_two_one = (CheckBox) findViewById(R.id.q_two_one);
         CheckBox q_two_two = (CheckBox) findViewById(R.id.q_two_two);
         CheckBox q_two_three = (CheckBox) findViewById(R.id.q_two_three);
         if (q_two_one.isChecked() && q_two_two.isChecked() && q_two_three.isChecked()){
-            final_score = final_score + 20;
-        }
+            question_two = question_two + 20;
+         }
+     }
 
-        //QUESTION THREE
+    //QUESTION THREE
+    private void questionThreeAns(View view) {
         EditText q_three_answer_ed = findViewById(R.id.q_three_answer);
         String q_three_answer = q_three_answer_ed.getText().toString();
-        if (q_three_answer == "floof")
-            final_score = final_score + 20;
-
-        //QUESTION FOUR
-        RadioButton q_four_answer  = (RadioButton) findViewById(R.id.q_four_answer);
-        if (q_four_answer.isChecked()) {
-            final_score = final_score + 20;
+        if (q_three_answer == "floof") {
+            question_three = question_three + 20;
         }
+    }
 
-        //QUESTION FIVE
+    //QUESTION FOUR
+    private void questionFourAns(View view) {
+        RadioButton q_four_answer = (RadioButton) findViewById(R.id.q_four_answer);
+        if (q_four_answer.isChecked()) {
+            question_four = question_four + 20;
+        }
+    }
+
+    //QUESTION FIVE
+    private void questionFiveAns(View view) {
         CheckBox q_five_one = (CheckBox) findViewById(R.id.q_five_one);
         CheckBox q_five_two = (CheckBox) findViewById(R.id.q_five_two);
         CheckBox q_five_three = (CheckBox) findViewById(R.id.q_five_three);
-        if (q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked()){
-            final_score = final_score + 20;
+        if (q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked()) {
+            question_five = question_five + 20;
         }
-
-        return final_score;
     }
-
 
     //Calculates final_score
     public int calculateFinalScore(){
